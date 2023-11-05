@@ -1,0 +1,393 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.intro-title,
+.ser-title,
+.brand-control-title,
+.user-exp-title,
+.company-projects {
+  color: #967331;
+  text-align: center;
+  margin: 50px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: -0.4px;
+}
+
+.intro-text,
+.ser-text {
+  width: 60%;
+
+  margin: 30px auto 50px auto;
+  color: #062d4c;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.ser-content {
+  color: #fff;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0 100px;
+}
+
+.services:nth-child(even) .ser-img {
+  order: 2;
+}
+.services:nth-child(even) .ser-content {
+  text-align: right;
+}
+.services {
+  background: #062d4c;
+}
+
+.service-alate {
+  margin: 100px 0;
+}
+
+.brand-cate {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.brand-cate:hover::before {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.5s ease;
+}
+
+.brand-cate::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.brand-cate-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.brand-cate-text a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  transition: 0.5s ease;
+}
+
+.brand-cate:hover .brand-cate-text a {
+  color: #062d4c;
+  font-weight: 700;
+}
+.user-exp-background {
+  position: relative;
+  margin-top: 50px;
+}
+.user-name {
+  color: #062d4c;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 20px;
+}
+.user-exp {
+  margin: 100px 0;
+}
+.user-info {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 20px;
+}
+.user-feedback {
+  border-radius: 27px;
+  background: rgba(255, 255, 255, 0.4);
+  /* box-shadow: 0px 24px 35px 0px rgba(16, 70, 79, 0.2);/ */
+  backdrop-filter: blur(10.5px);
+  padding: 50px;
+}
+.feedback {
+  text-align: justify;
+}
+
+.FeedbackSwiper {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  padding: 40px 20px;
+}
+
+.FeedbackSwiper .swiper-pagination-feed {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+}
+
+.FeedbackSwiper span.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+  border: 1px solid #fff;
+  width: 12px;
+  height: 12px;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #062d4c;
+  border: none;
+}
+.intro-img {
+  margin-bottom: 12px;
+}
+
+.project-dev-title {
+  color: #062d4c;
+  text-align: center;
+
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.project-dev-text {
+  color: #454545;
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 20px 0 50px 0;
+}
+
+.img-sec {
+  background: #062d4c;
+  padding: 0;
+}
+.tech-advices {
+  width: 80%;
+}
+
+.tabs {
+  background: #967331;
+  padding: 10px 20px;
+  color: var(--Blue-1000, #062d4c);
+  text-align: justify;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.tech-advices ul {
+  list-style: disc;
+
+  color: #605f5f;
+  text-align: justify;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.tech-advices p:first-child {
+  color: #062d4c;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.tech-advices p {
+  color: #000;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tabs i {
+  color: #ffff;
+}
+
+.project-img img {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.project-img:hover {
+  border: 1px solid #dbd1d1;
+}
+
+.project-img:hover img {
+  transform: scale(0.9);
+}
+
+@media (max-width: 960px) {
+  .img-slide {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .intro-title,
+  .ser-title,
+  .brand-control-title,
+  .user-exp-title {
+    margin: 40px 0;
+    font-size: 35px;
+  }
+  .intro-text,
+  .ser-text {
+    width: 100%;
+    padding: 0 12px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .ser-content {
+    font-size: 30px;
+    padding: unset;
+  }
+  .services {
+    /* justify-content: unset !important; */
+    position: relative;
+    background: none;
+  }
+
+  .ser-img {
+    position: relative;
+  }
+  .ser-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1px);
+  }
+  .services:nth-child(even) .ser-content {
+    text-align: center;
+  }
+  .services .ser-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+  }
+  .brand-cate-text a {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .service-alate {
+    margin: 0;
+  }
+  .FeedbackSwiper {
+    width: 100%;
+    position: unset;
+    top: 50%;
+    left: 10%;
+    transform: unset;
+    padding: unset;
+  }
+  .user-feedback {
+    border-radius: unset;
+    background: unset;
+    backdrop-filter: unset;
+    padding: 50px;
+  }
+}
+@media (max-width: 720px) {
+  .img-slide {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .intro-title,
+  .ser-title,
+  .brand-control-title,
+  .user-exp-title {
+    margin: 40px 0;
+    font-size: 25px;
+  }
+  .intro-text,
+  .ser-text {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .ser-content {
+    font-size: 20px;
+    padding: unset;
+  }
+  .services {
+    justify-content: unset !important;
+    position: relative;
+  }
+
+  .ser-img {
+    position: relative;
+  }
+  .ser-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1px);
+  }
+  .services:nth-child(even) .ser-content {
+    text-align: center;
+  }
+  .services .ser-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+  }
+  .brand-cate-text a {
+    font-size: 20px;
+  }
+  .service-alate {
+    margin: 0;
+  }
+}
