@@ -31,6 +31,20 @@ var swiper = new Swiper(".FeedbackSwiper", {
   },
 });
 
+var swiper = new Swiper(".RoomImgs", {
+  slidesPerView: 1,
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination-room",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-room",
+    prevEl: ".swiper-button-prev-room",
+  },
+});
+
 var swiper = new Swiper(".ProjectSwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -79,3 +93,20 @@ if (angleDowns) {
     });
   });
 }
+
+let more = document.querySelector(".load-more");
+let current_items = 4;
+
+more.addEventListener("click", () => {
+  let rooms = [...document.querySelectorAll(".room-wrap")];
+  for (var i = current_items; i < current_items + 4; i++) {
+    if (rooms[i]) {
+      rooms[i].style.display = "block";
+    }
+  }
+  current_items += 4;
+  if (current_items >= rooms.length) {
+    more.style.opacity = "0.5";
+    more.style.pointerEvents = "none";
+  }
+});
