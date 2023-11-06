@@ -110,3 +110,24 @@ more.addEventListener("click", () => {
     more.style.pointerEvents = "none";
   }
 });
+
+// // Lấy tất cả các tùy chọn
+// const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+// // Lấy nút "Next"
+// const nextButton = document.getElementById('next-button');
+
+// // Thêm sự kiện "change" cho mỗi checkbox
+// checkboxes.forEach(checkbox => {
+//   checkbox.addEventListener('change', () => {
+//     // Kiểm tra nếu có bất kỳ checkbox nào được chọn
+//     const anyCheckboxChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+
+//     // Ẩn hoặc hiển thị nút "Next" dựa trên kết quả kiểm tra
+//     if (anyCheckboxChecked) {
+//       nextButton.style.display = 'block'; // Hiển thị nút "Next"
+//     } else {
+//       nextButton.style.display = 'none'; // Ẩn nút "Next"
+//     }
+//   });
+// });
